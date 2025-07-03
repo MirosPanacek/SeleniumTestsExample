@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+    <appender name="SIFT" class="ch.qos.logback.classic.sift.SiftingAppender">
+        <discriminator>
+            <key>test</key>
+            <defaultValue>unknown</defaultValue>
+        </discriminator>
+        <sift>
+            <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <pattern>
+                        %d{yyyy-MM-dd HH:mm:ss} %X{test} [%thread] %level %logger{35} - %msg%n
+                    </pattern>
+                </encoder>
+            </appender>
+
+            <logers>
+                <logger name="io.github.bonigarcia" level="INFO" />
+                <logger name="io" level="WARN" />
+                <logger name="org" level="WARN" />
+                <logger name="com" level="WARN" />
+            </logers>
+        </sift>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>./log/test-${bySecond}.log</file>
+        <append>true</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss} %X{test} [%thread] %-5level %logger{35} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+
+    <root level="INFO">
+        <appender-ref ref="SIFT" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>
