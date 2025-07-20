@@ -1,9 +1,0 @@
-/home/mp/eclipse-workspace/SeleniumTestsExample/src/main/java/com/github/mirospanacek/config/Configuration.java
-/home/mp/eclipse-workspace/SeleniumTestsExample/src/main/java/com/github/mirospanacek/pages/LoginPage.java
-/home/mp/eclipse-workspace/SeleniumTestsExample/src/main/java/com/github/mirospanacek/data/SocialTitle.java
-/home/mp/eclipse-workspace/SeleniumTestsExample/src/main/java/com/github/mirospanacek/utils/FailureManager.java
-/home/mp/eclipse-workspace/SeleniumTestsExample/src/main/java/com/github/mirospanacek/data/customers/Customer.java
-/home/mp/eclipse-workspace/SeleniumTestsExample/src/main/java/com/github/mirospanacek/data/customers/CustomersFactory.java
-/home/mp/eclipse-workspace/SeleniumTestsExample/src/main/java/com/github/mirospanacek/driverFactory/Browsers.java
-/home/mp/eclipse-workspace/SeleniumTestsExample/src/main/java/com/github/mirospanacek/pages/MyAccountPage.java
-/home/mp/eclipse-workspace/SeleniumTestsExample/src/main/java/com/github/mirospanacek/driverFactory/DriverFactory.java
