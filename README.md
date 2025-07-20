@@ -10,7 +10,7 @@ Run tests local: ```mvn clean test -Plocal```
 A logs are in ./log
 If tests fail screenshots are in folder ./failTestsPicture
 
-
+## Notes For admin app in docker ##
 Username (uživatel): demo@prestashop.com
 
 Password (heslo): prestashop_demo
