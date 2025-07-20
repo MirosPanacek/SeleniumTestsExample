@@ -1,7 +1,5 @@
 package com.github.mirospanacek.driverFactory;
 
-
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -12,23 +10,19 @@ import org.openqa.selenium.firefox.FirefoxProfile;
  */
 
 public class DriverFactory {
-    private String dockerScreenResolution = "2560x1440x24";
-
     /**
      * Method sets Webdrivermanagers capabilities.
-     * @param browser type of browser
-     * @param inspection if true docker container makes .mp4 record.
-     * It is available only for docker container
+     *
+     * @param browser    type of browser
      * @return set Webdrivermanager
      */
-    public WebDriverManager create(String browser, boolean inspection) {
+    public WebDriverManager create(String browser) {
         WebDriverManager wdm;
 
         Browsers browserType = Browsers.valueOf(browser.toUpperCase());
 
         switch (browserType) {
             case CHROME:
-
                 ChromeOptions option = new ChromeOptions();
                 option.addArguments("start-maximized");
                 option.addArguments("--headless=new");
@@ -40,7 +34,6 @@ public class DriverFactory {
                 break;
 
             case FIREFOX:
-
                 FirefoxProfile profile = new FirefoxProfile();
                 profile.setPreference("intl.accept_languages", "cs-CZ");
                 FirefoxOptions options = new FirefoxOptions();
@@ -53,7 +46,6 @@ public class DriverFactory {
                 break;
 
             case EDGE:
-
                 wdm = WebDriverManager
                         .edgedriver();
                 break;
@@ -65,23 +57,16 @@ public class DriverFactory {
                 optionLocal.addArguments("--remote-allow-origins=*");
                 optionLocal.addArguments(
                         "--disable-search-engine-choice-screen");
+
                 wdm = WebDriverManager
                         .chromedriver()
                         .capabilities(optionLocal);
-
                 break;
 
             default:
                 throw new IllegalArgumentException("Unexpected value: "
                         + browserType);
         }
-
-        if ((browserType.toString() != "LOCAL") && inspection) {
-            wdm.enableRecording()
-                    .dockerRecordingOutput("mov")
-                    .dockerRecordingFrameRate(50);
-        }
-
         return wdm;
     }
 }

@@ -25,7 +25,6 @@ public class LoginPage {
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofMillis(3000L));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(loginButton));
     }
 
     public void enterUsername(String username) {
@@ -48,6 +47,7 @@ public class LoginPage {
     }
 
     public void loginAs(String username, String password) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(loginButton));
         enterUsername(username);
         enterPassword(password);
         clickLogin();

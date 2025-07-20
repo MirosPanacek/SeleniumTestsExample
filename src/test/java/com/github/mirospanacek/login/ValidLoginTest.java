@@ -36,6 +36,7 @@ public class ValidLoginTest extends TestPreset {
 
     @Test(dataProvider = "getCustomers")
     public void positiveLogin(Customer customer) {
+        LOG.info("Customer email: {} password: {}", customer.getEmail(), customer.getPassword());
         String accountName = customer.getFirstName() + " " + customer.getLastName();
         LoginPage loginPage = new LoginPage(driver);
         LOG.info("Step 1: Fill in user name password and click the button login");
