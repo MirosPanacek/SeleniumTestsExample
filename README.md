@@ -3,11 +3,12 @@ Test scenarios:
 1. Login to sytem, valid,invalid
 
 ## Run ##
-**start app:** docker compose up
-Run tests headless: mvn clean test
-Rud tests local: mvn clean test -Plocal
+**start app:** ```docker compose up```  
+Run tests headless: ```mvn clean test```  
+Run tests local: ```mvn clean test -Plocal```  
 
-logs run to ./log
+A logs are in ./log
+If tests fail screenshots are in folder ./failTestsPicture
 
 
 Username (uživatel): demo@prestashop.com
