@@ -1,0 +1,31 @@
+2025-07-08 18:23:30  [TestNG-test-Regression Test-1] INFO  c.g.m.config.Configuration - jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48
+2025-07-08 18:23:30  [TestNG-test-Regression Test-2] INFO  c.g.m.config.Configuration - jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48
+2025-07-08 18:23:30  [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - Actual test URL: http://localhost:8089
+2025-07-08 18:23:30  [TestNG-test-Regression Test-2] INFO  com.github.mirospanacek.TestPreset - Actual test URL: http://localhost:8089
+2025-07-08 18:23:30 invalidLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ************* Test: invalidLogin **************
+2025-07-08 18:23:30 positiveLogin [TestNG-test-Regression Test-2] INFO  com.github.mirospanacek.TestPreset - ************* Test: positiveLogin **************
+2025-07-08 18:23:31 invalidLogin [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.92 (resolved driver for Chrome 138)
+2025-07-08 18:23:31 positiveLogin [TestNG-test-Regression Test-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.92 (resolved driver for Chrome 138)
+2025-07-08 18:23:31 invalidLogin [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.92/chromedriver
+2025-07-08 18:23:31 positiveLogin [TestNG-test-Regression Test-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.92/chromedriver
+2025-07-08 18:23:32 invalidLogin [TestNG-test-Regression Test-1] INFO  c.g.m.login.InvalidLoginTest - Customer email: a@gmail.com password: Asdf456.lkj
+2025-07-08 18:23:32 invalidLogin [TestNG-test-Regression Test-1] INFO  c.g.m.login.InvalidLoginTest - Step 1: Fill in user name password and click the button login
+2025-07-08 18:23:33 invalidLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ********** end of test:invalidLogin ***********
+2025-07-08 18:23:33 invalidLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ************* Test: invalidLogin **************
+2025-07-08 18:23:33 invalidLogin [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.92 (resolved driver for Chrome 138)
+2025-07-08 18:23:33 invalidLogin [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.92/chromedriver
+2025-07-08 18:23:34 positiveLogin [TestNG-test-Regression Test-2] INFO  c.g.m.login.ValidLoginTest - Customer email: panacek.m@gmail.com password: Asdf456.lkj
+2025-07-08 18:23:34 positiveLogin [TestNG-test-Regression Test-2] INFO  c.g.m.login.ValidLoginTest - Step 1: Fill in user name password and click the button login
+2025-07-08 18:23:35 invalidLogin [TestNG-test-Regression Test-1] INFO  c.g.m.login.InvalidLoginTest - Customer email: panacek.m@gmail.com password: .lkj
+2025-07-08 18:23:35 invalidLogin [TestNG-test-Regression Test-1] INFO  c.g.m.login.InvalidLoginTest - Step 1: Fill in user name password and click the button login
+2025-07-08 18:23:35 positiveLogin [TestNG-test-Regression Test-2] INFO  c.g.m.login.ValidLoginTest - Miroš Panáček
+2025-07-08 18:23:35 positiveLogin [TestNG-test-Regression Test-2] INFO  c.g.m.login.ValidLoginTest - Miroš Panáček
+2025-07-08 18:23:36 positiveLogin [TestNG-test-Regression Test-2] INFO  com.github.mirospanacek.TestPreset - ********** end of test:positiveLogin ***********
+2025-07-08 18:23:39 invalidLogin [TestNG-test-Regression Test-1] INFO  c.g.m.utils.FailureManager - Screenshot is in: ./failTestsPicture/2347586072353087-invalidLogin.png
+2025-07-08 18:23:39 invalidLogin [TestNG-test-Regression Test-1] ERROR com.github.mirospanacek.TestPreset - Error occur: Expected condition failed: waiting for visibility of element located by By.cssSelector: li[class='alert alert-danger'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45451/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e2244b27394c3eda1cf540cc35fd0cd
+2025-07-08 18:23:39 invalidLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ********** end of test:invalidLogin ***********

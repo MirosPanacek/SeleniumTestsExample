@@ -1,0 +1,11 @@
+2025-07-03 13:14:00  [TestNG-test-Regression Test-1] INFO  c.g.m.config.Configuration - jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48
+2025-07-03 13:14:00  [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - Actual test URL: http://localhost:8089
+2025-07-03 13:14:00 positiveLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ************* Test: positiveLogin **************
+2025-07-03 13:14:01 positiveLogin [TestNG-test-Regression Test-1] INFO  i.g.b.wdm.docker.DockerService - Pulling Docker image selenoid/vnc:chrome_128.0 (this might take some time, but only the first time)
+2025-07-03 13:14:03 positiveLogin [TestNG-test-Regression Test-1] INFO  i.g.b.wdm.docker.DockerService - Starting Docker container selenoid/vnc:chrome_128.0
+2025-07-03 13:14:03 positiveLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ********** end of test:positiveLogin ***********
+2025-07-03 13:14:03  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: prestashop/prestashop:latest
+2025-07-03 13:14:03  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mysql:5.7
+2025-07-03 13:14:03  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mongo-express
+2025-07-03 13:14:03  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mongo:6
+2025-07-03 13:14:03  [main] INFO  com.github.mirospanacek.TestPreset - End of suite

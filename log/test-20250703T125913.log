@@ -1,0 +1,78 @@
+2025-07-03 12:59:13  [TestNG-test-Regression Test-1] INFO  c.g.m.config.Configuration - jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48
+2025-07-03 12:59:13  [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - Actual test URL: http://host.docker.internal:8089
+2025-07-03 12:59:13 positiveLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ************* Test: positiveLogin **************
+2025-07-03 12:59:14 positiveLogin [TestNG-test-Regression Test-1] INFO  i.g.b.wdm.docker.DockerService - Pulling Docker image selenoid/vnc:chrome_128.0 (this might take some time, but only the first time)
+2025-07-03 12:59:16 positiveLogin [TestNG-test-Regression Test-1] INFO  i.g.b.wdm.docker.DockerService - Starting Docker container selenoid/vnc:chrome_128.0
+2025-07-03 12:59:19 positiveLogin [TestNG-test-Regression Test-1] WARN  i.g.bonigarcia.wdm.WebDriverManager - Exception closing RemoteWebDriver: chrome on linux (null) (Error communicating with the remote browser. It may have died.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [aec878205aa0d9b321764811949464c4, quit []]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.18 (7d504c2c60ba..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aec878205aa0d9b321764811949464c4)
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-60-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [aec878205aa0d9b321764811949464c4, quit []]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.18 (7d504c2c60ba..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aec878205aa0d9b321764811949464c4
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:952)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:905)
+	at com.github.mirospanacek.TestPreset.teardown(TestPreset.java:133)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:292)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:73)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:622)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.RuntimeException: java.lang.InterruptedException
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:461)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:374)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	... 35 common frames omitted
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:401)
+	... 42 common frames omitted
+2025-07-03 12:59:19 positiveLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ********** end of test:positiveLogin ***********
+2025-07-03 12:59:19  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: selenoid/vnc:chrome_128.0
+2025-07-03 12:59:19  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: prestashop/prestashop:latest
+2025-07-03 12:59:19  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mysql:5.7
+2025-07-03 12:59:19  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mongo-express
+2025-07-03 12:59:19  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mongo:6
+2025-07-03 12:59:19  [main] INFO  com.github.mirospanacek.TestPreset - Zombi container: selenoid/vnc:chrome_128.0, running, [/heuristic_elion]
+2025-07-03 12:59:19  [main] INFO  com.github.mirospanacek.TestPreset - End of suite

@@ -1,0 +1,20 @@
+2025-07-03 13:07:51  [TestNG-test-Regression Test-1] INFO  c.g.m.config.Configuration - jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48
+2025-07-03 13:07:51  [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - Actual test URL: http://localhost:8089
+2025-07-03 13:07:53  [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.92 (resolved driver for Chrome 138)
+2025-07-03 13:07:53  [TestNG-test-Regression Test-1] INFO  i.g.b.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.92/linux64/chromedriver-linux64.zip
+2025-07-03 13:08:00  [TestNG-test-Regression Test-1] INFO  i.g.b.wdm.online.Downloader - Extracting driver from compressed file chromedriver-linux64.zip
+2025-07-03 13:08:01  [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.92/chromedriver
+2025-07-03 13:08:01 positiveLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ************* Test: positiveLogin **************
+2025-07-03 13:08:01 positiveLogin [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.92 (resolved driver for Chrome 138)
+2025-07-03 13:08:01 positiveLogin [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.92/chromedriver
+2025-07-03 13:08:03 positiveLogin [TestNG-test-Regression Test-1] INFO  c.g.mirospanacek.login.LoginTest - Step 1: Fill in user name password and click the button login
+2025-07-03 13:08:04 positiveLogin [TestNG-test-Regression Test-1] INFO  c.g.mirospanacek.login.LoginTest - Miroš Panaček
+2025-07-03 13:08:04 positiveLogin [TestNG-test-Regression Test-1] INFO  c.g.mirospanacek.login.LoginTest -  
+2025-07-03 13:08:04 positiveLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ********** end of test:positiveLogin ***********
+2025-07-03 13:08:04  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: selenoid/vnc:chrome_128.0
+2025-07-03 13:08:04  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: prestashop/prestashop:latest
+2025-07-03 13:08:04  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mysql:5.7
+2025-07-03 13:08:04  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mongo-express
+2025-07-03 13:08:04  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mongo:6
+2025-07-03 13:08:04  [main] INFO  com.github.mirospanacek.TestPreset - Zombi container: selenoid/vnc:chrome_128.0, running, [/lucid_taussig]
+2025-07-03 13:08:04  [main] INFO  com.github.mirospanacek.TestPreset - End of suite

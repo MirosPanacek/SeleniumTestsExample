@@ -1,0 +1,134 @@
+2025-07-13 21:30:06  [TestNG-test-Regression Test-1] INFO  c.g.m.config.Configuration - jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48
+2025-07-13 21:30:06  [TestNG-test-Regression Test-2] INFO  c.g.m.config.Configuration - jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48
+2025-07-13 21:30:06  [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - Actual test URL: http://localhost:8089
+2025-07-13 21:30:06  [TestNG-test-Regression Test-2] INFO  com.github.mirospanacek.TestPreset - Actual test URL: http://localhost:8089
+2025-07-13 21:30:06 positiveLogin [TestNG-test-Regression Test-2] INFO  com.github.mirospanacek.TestPreset - ************* Test: positiveLogin **************
+2025-07-13 21:30:06 invalidLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ************* Test: invalidLogin **************
+2025-07-13 21:30:07 positiveLogin [TestNG-test-Regression Test-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.94 (resolved driver for Chrome 138)
+2025-07-13 21:30:07 invalidLogin [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.94 (resolved driver for Chrome 138)
+2025-07-13 21:30:07 positiveLogin [TestNG-test-Regression Test-2] INFO  i.g.b.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/linux64/chromedriver-linux64.zip
+2025-07-13 21:30:07 invalidLogin [TestNG-test-Regression Test-1] INFO  i.g.b.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/linux64/chromedriver-linux64.zip
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO  i.g.b.wdm.online.Downloader - Extracting driver from compressed file chromedriver-linux64.zip
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] WARN  i.g.bonigarcia.wdm.WebDriverManager - Exception closing ChromeDriver: chrome on linux (null) (Timed out waiting for driver server to stop.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-63-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [118a252be76912177387ff950b085a2a, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34791}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34791/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 118a252be76912177387ff950b085a2a)
+org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-63-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [118a252be76912177387ff950b085a2a, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34791}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34791/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 118a252be76912177387ff950b085a2a
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:435)
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:952)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:905)
+	at com.github.mirospanacek.TestPreset.teardown(TestPreset.java:108)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:292)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:73)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:622)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
+	... 37 common frames omitted
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ********** end of test:invalidLogin ***********
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ************* Test: invalidLogin **************
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.94 (resolved driver for Chrome 138)
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ********** end of test:invalidLogin ***********
+2025-07-13 21:30:15 positiveLogin [TestNG-test-Regression Test-2] INFO  i.g.b.wdm.online.Downloader - Extracting driver from compressed file chromedriver-linux64.zip
+2025-07-13 21:30:15 positiveLogin [TestNG-test-Regression Test-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver
+2025-07-13 21:30:16 positiveLogin [TestNG-test-Regression Test-2] WARN  i.g.bonigarcia.wdm.WebDriverManager - Exception closing ChromeDriver: chrome on linux (null) (Timed out waiting for driver server to stop.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-63-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ffa3818a61cae890ff8245e2e428cae6, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39277/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffa3818a61cae890ff8245e2e428cae6)
+org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-63-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ffa3818a61cae890ff8245e2e428cae6, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39277/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffa3818a61cae890ff8245e2e428cae6
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:435)
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:952)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:905)
+	at com.github.mirospanacek.TestPreset.teardown(TestPreset.java:108)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:292)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:73)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:622)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
+	... 37 common frames omitted
+2025-07-13 21:30:16 positiveLogin [TestNG-test-Regression Test-2] INFO  com.github.mirospanacek.TestPreset - ********** end of test:positiveLogin ***********

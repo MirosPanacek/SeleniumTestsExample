@@ -1,0 +1,10 @@
+com/github/mirospanacek/driverFactory/DriverFactory.class
+com/github/mirospanacek/data/customers/CustomersFactory.class
+com/github/mirospanacek/driverFactory/Browsers.class
+com/github/mirospanacek/driverFactory/DriverFactory$1.class
+com/github/mirospanacek/config/Configuration.class
+com/github/mirospanacek/pages/MyAccountPage.class
+com/github/mirospanacek/data/customers/Customer.class
+com/github/mirospanacek/data/SocialTitle.class
+com/github/mirospanacek/pages/LoginPage.class
+com/github/mirospanacek/utils/FailureManager.class

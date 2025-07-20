@@ -1,0 +1,10 @@
+2025-07-03 10:41:13  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /home/mp/.cache/JetBrains/IdeaIC2025.1/temp-testng-customsuite.xml
+
+2025-07-03 10:41:13 positiveLogin [main] INFO  com.github.mirospanacek.TestPreset - ************* Test: positiveLogin **************
+2025-07-03 10:41:13 positiveLogin [main] INFO  com.github.mirospanacek.TestPreset - ********** end of test:positiveLogin ***********
+2025-07-03 10:41:14  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: prestashop/prestashop:latest
+2025-07-03 10:41:14  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mysql:5.7
+2025-07-03 10:41:14  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mongo-express
+2025-07-03 10:41:14  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mongo:6
+2025-07-03 10:41:14  [main] INFO  com.github.mirospanacek.TestPreset - End of suite

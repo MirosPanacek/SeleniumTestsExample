@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="10.157" tests="12" errors="0" skipped="9" failures="3">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="/home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/mp/eclipse-workspace/SeleniumTestsExample/target/test-classes:/home/mp/eclipse-workspace/SeleniumTestsExample/target/classes:/home/mp/.m2/repository/io/github/bonigarcia/webdrivermanager/5.9.2/webdrivermanager-5.9.2.jar:/home/mp/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/home/mp/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/home/mp/.m2/repository/com/github/docker-java/docker-java/3.4.0/docker-java-3.4.0.jar:/home/mp/.m2/repository/com/github/docker-java/docker-java-core/3.4.0/docker-java-core-3.4.0.jar:/home/mp/.m2/repository/com/github/docker-java/docker-java-api/3.4.0/docker-java-api-3.4.0.jar:/home/mp/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/mp/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.4.0/docker-java-transport-httpclient5-3.4.0.jar:/home/mp/.m2/repository/com/github/docker-java/docker-java-transport/3.4.0/docker-java-transport-3.4.0.jar:/home/mp/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/mp/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/mp/.m2/repository/org/apache/commons/commons-lang3/3.15.0/commons-lang3-3.15.0.jar:/home/mp/.m2/repository/org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.jar:/home/mp/.m2/repository/commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar:/home/mp/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/home/mp/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/mp/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/home/mp/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-java/4.25.0/selenium-java-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-api/4.25.0/selenium-api-4.25.0.jar:/home/mp/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.25.0/selenium-chrome-driver-4.25.0.jar:/home/mp/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.25.0/selenium-chromium-driver-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-json/4.25.0/selenium-json-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.25.0/selenium-manager-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v127/4.25.0/selenium-devtools-v127-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v128/4.25.0/selenium-devtools-v128-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.25.0/selenium-devtools-v129-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.25.0/selenium-devtools-v85-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.25.0/selenium-edge-driver-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.25.0/selenium-firefox-driver-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-http/4.25.0/selenium-http-4.25.0.jar:/home/mp/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.25.0/selenium-ie-driver-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.25.0/selenium-remote-driver-4.25.0.jar:/home/mp/.m2/repository/com/google/guava/guava/33.3.0-jre/guava-33.3.0-jre.jar:/home/mp/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/home/mp/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/mp/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/mp/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/home/mp/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/mp/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-api/1.42.1/opentelemetry-api-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-context/1.42.1/opentelemetry-context-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.42.1/opentelemetry-exporter-logging-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.42.1/opentelemetry-sdk-common-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.42.1/opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.42.1/opentelemetry-sdk-extension-autoconfigure-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.42.1-alpha/opentelemetry-api-incubator-1.42.1-alpha.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.42.1/opentelemetry-sdk-trace-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.42.1/opentelemetry-sdk-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.42.1/opentelemetry-sdk-metrics-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.42.1/opentelemetry-sdk-logs-1.42.1.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-os/4.25.0/selenium-os-4.25.0.jar:/home/mp/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.25.0/selenium-safari-driver-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-support/4.25.0/selenium-support-4.25.0.jar:/home/mp/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/mp/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/mp/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/mp/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/mp/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/home/mp/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.0/jackson-databind-2.18.0.jar:/home/mp/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.0/jackson-annotations-2.18.0.jar:/home/mp/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.0/jackson-core-2.18.0.jar:/home/mp/.m2/repository/net/datafaker/datafaker/2.4.2/datafaker-2.4.2.jar:/home/mp/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/home/mp/.m2/repository/com/github/curious-odd-man/rgxgen/2.0/rgxgen-2.0.jar:/home/mp/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.13.50/libphonenumber-8.13.50.jar:/home/mp/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/home/mp/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/home/mp/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Europe/Prague"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CZ"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/mp/eclipse-workspace/SeleniumTestsExample/target/surefire/surefirebooter-20250713213005834_3.jar /home/mp/eclipse-workspace/SeleniumTestsExample/target/surefire 2025-07-13T21-30-05_771-jvmRun1 surefire-20250713213005834_1tmp surefire_0-20250713213005834_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/mp/eclipse-workspace/SeleniumTestsExample/target/test-classes:/home/mp/eclipse-workspace/SeleniumTestsExample/target/classes:/home/mp/.m2/repository/io/github/bonigarcia/webdrivermanager/5.9.2/webdrivermanager-5.9.2.jar:/home/mp/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/home/mp/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/home/mp/.m2/repository/com/github/docker-java/docker-java/3.4.0/docker-java-3.4.0.jar:/home/mp/.m2/repository/com/github/docker-java/docker-java-core/3.4.0/docker-java-core-3.4.0.jar:/home/mp/.m2/repository/com/github/docker-java/docker-java-api/3.4.0/docker-java-api-3.4.0.jar:/home/mp/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/mp/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.4.0/docker-java-transport-httpclient5-3.4.0.jar:/home/mp/.m2/repository/com/github/docker-java/docker-java-transport/3.4.0/docker-java-transport-3.4.0.jar:/home/mp/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/mp/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/mp/.m2/repository/org/apache/commons/commons-lang3/3.15.0/commons-lang3-3.15.0.jar:/home/mp/.m2/repository/org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.jar:/home/mp/.m2/repository/commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar:/home/mp/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/home/mp/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/mp/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/home/mp/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-java/4.25.0/selenium-java-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-api/4.25.0/selenium-api-4.25.0.jar:/home/mp/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.25.0/selenium-chrome-driver-4.25.0.jar:/home/mp/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.25.0/selenium-chromium-driver-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-json/4.25.0/selenium-json-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.25.0/selenium-manager-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v127/4.25.0/selenium-devtools-v127-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v128/4.25.0/selenium-devtools-v128-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.25.0/selenium-devtools-v129-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.25.0/selenium-devtools-v85-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.25.0/selenium-edge-driver-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.25.0/selenium-firefox-driver-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-http/4.25.0/selenium-http-4.25.0.jar:/home/mp/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.25.0/selenium-ie-driver-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.25.0/selenium-remote-driver-4.25.0.jar:/home/mp/.m2/repository/com/google/guava/guava/33.3.0-jre/guava-33.3.0-jre.jar:/home/mp/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/home/mp/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/mp/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/mp/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/home/mp/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/mp/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-api/1.42.1/opentelemetry-api-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-context/1.42.1/opentelemetry-context-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.42.1/opentelemetry-exporter-logging-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.42.1/opentelemetry-sdk-common-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.42.1/opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.42.1/opentelemetry-sdk-extension-autoconfigure-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.42.1-alpha/opentelemetry-api-incubator-1.42.1-alpha.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.42.1/opentelemetry-sdk-trace-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.42.1/opentelemetry-sdk-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.42.1/opentelemetry-sdk-metrics-1.42.1.jar:/home/mp/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.42.1/opentelemetry-sdk-logs-1.42.1.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-os/4.25.0/selenium-os-4.25.0.jar:/home/mp/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.25.0/selenium-safari-driver-4.25.0.jar:/home/mp/.m2/repository/org/seleniumhq/selenium/selenium-support/4.25.0/selenium-support-4.25.0.jar:/home/mp/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/mp/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/mp/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/mp/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/mp/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/home/mp/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.0/jackson-databind-2.18.0.jar:/home/mp/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.0/jackson-annotations-2.18.0.jar:/home/mp/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.0/jackson-core-2.18.0.jar:/home/mp/.m2/repository/net/datafaker/datafaker/2.4.2/datafaker-2.4.2.jar:/home/mp/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/home/mp/.m2/repository/com/github/curious-odd-man/rgxgen/2.0/rgxgen-2.0.jar:/home/mp/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.13.50/libphonenumber-8.13.50.jar:/home/mp/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/home/mp/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/home/mp/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/mp"/>
+    <property name="user.language" value="cs"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/mp/eclipse-workspace/SeleniumTestsExample"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/mp/eclipse-workspace/SeleniumTestsExample/target/surefire/surefirebooter-20250713213005834_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.7+6-Ubuntu-0ubuntu124.04"/>
+    <property name="user.name" value="mp"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-63-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/mp/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="/home/mp/eclipse-workspace/SeleniumTestsExample"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.7+6-Ubuntu-0ubuntu124.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="setUp[public void com.github.mirospanacek.login.InvalidLoginTest.invalidLogin(com.github.mirospanacek.data.customers.Customer)](1)" classname="com.github.mirospanacek.login.InvalidLoginTest" time="8.939">
+    <failure message="unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=138.0.7204.92)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-63-generic&apos;, java.version: &apos;21.0.7&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [118a252be76912177387ff950b085a2a, get {url=http://localhost:8089}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34791}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34791/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 118a252be76912177387ff950b085a2a" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=138.0.7204.92)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-63-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [118a252be76912177387ff950b085a2a, get {url=http://localhost:8089}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34791}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34791/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 118a252be76912177387ff950b085a2a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.github.mirospanacek.TestPreset.setUp(TestPreset.java:89)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:292)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:73)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[...
+... TestNG 7.10.2 by Cédric Beust (cedric@beust.com)
+...
+
+2025-07-13 21:30:06  [TestNG-test-Regression Test-1] INFO c.g.m.config.Configuration - jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48
+2025-07-13 21:30:06  [TestNG-test-Regression Test-2] INFO c.g.m.config.Configuration - jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48
+2025-07-13 21:30:06  [TestNG-test-Regression Test-1] INFO com.github.mirospanacek.TestPreset - Actual test URL: http://localhost:8089
+2025-07-13 21:30:06  [TestNG-test-Regression Test-2] INFO com.github.mirospanacek.TestPreset - Actual test URL: http://localhost:8089
+2025-07-13 21:30:06 positiveLogin [TestNG-test-Regression Test-2] INFO com.github.mirospanacek.TestPreset - ************* Test: positiveLogin **************
+2025-07-13 21:30:06 invalidLogin [TestNG-test-Regression Test-1] INFO com.github.mirospanacek.TestPreset - ************* Test: invalidLogin **************
+2025-07-13 21:30:07 positiveLogin [TestNG-test-Regression Test-2] INFO i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.94 (resolved driver for Chrome 138)
+2025-07-13 21:30:07 invalidLogin [TestNG-test-Regression Test-1] INFO i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.94 (resolved driver for Chrome 138)
+2025-07-13 21:30:07 positiveLogin [TestNG-test-Regression Test-2] INFO i.g.b.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/linux64/chromedriver-linux64.zip
+2025-07-13 21:30:07 invalidLogin [TestNG-test-Regression Test-1] INFO i.g.b.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/linux64/chromedriver-linux64.zip
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO i.g.b.wdm.online.Downloader - Extracting driver from compressed file chromedriver-linux64.zip
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver
+]]></system-out>
+    <system-err><![CDATA[čvc 13, 2025 9:30:14 ODP. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+čvc 13, 2025 9:30:14 ODP. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.92. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="getCustomers" classname="com.github.mirospanacek.login.InvalidLoginTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="getCustomers" classname="com.github.mirospanacek.login.InvalidLoginTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUrl" classname="com.github.mirospanacek.login.InvalidLoginTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUrl" classname="com.github.mirospanacek.login.InvalidLoginTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="invalidLogin[Customer{firstName=&apos;&apos;, lastName=&apos;&apos;, email=&apos;a@gmail.com&apos;, password=&apos;Asdf456.lkj&apos;, socialTitle=null, birthdate=null}](1)" classname="com.github.mirospanacek.login.InvalidLoginTest" time="0.0">
+    <skipped message="unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=138.0.7204.92)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-63-generic&apos;, java.version: &apos;21.0.7&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [118a252be76912177387ff950b085a2a, get {url=http://localhost:8089}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34791}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34791/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 118a252be76912177387ff950b085a2a"/>
+  </testcase>
+  <testcase name="setUp[public void com.github.mirospanacek.login.InvalidLoginTest.invalidLogin(com.github.mirospanacek.data.customers.Customer)](2)" classname="com.github.mirospanacek.login.InvalidLoginTest" time="0.035">
+    <failure message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. &#10;Host info: host: &apos;mp-Latitude-7430&apos;, ip: &apos;127.0.1.1&apos;" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'mp-Latitude-7430', ip: '127.0.1.1'
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at io.github.bonigarcia.wdm.webdriver.WebDriverCreator.createLocalWebDriver(WebDriverCreator.java:61)
+	at io.github.bonigarcia.wdm.WebDriverManager.createLocalWebDriver(WebDriverManager.java:1964)
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1774)
+	at io.github.bonigarcia.wdm.WebDriverManager.create(WebDriverManager.java:433)
+	at com.github.mirospanacek.TestPreset.setUp(TestPreset.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:292)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:73)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Interrupted while waiting for driver server to start.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-63-generic', java.version: '21.0.7'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:260)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	... 40 more
+Caused by: java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:234)
+	... 42 more
+]]></failure>
+    <system-out><![CDATA[2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] WARN i.g.bonigarcia.wdm.WebDriverManager - Exception closing ChromeDriver: chrome on linux (null) (Timed out waiting for driver server to stop.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-63-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [118a252be76912177387ff950b085a2a, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34791}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34791/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 118a252be76912177387ff950b085a2a)
+org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-63-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [118a252be76912177387ff950b085a2a, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34791}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34791/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 118a252be76912177387ff950b085a2a
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:435)
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:952)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:905)
+	at com.github.mirospanacek.TestPreset.teardown(TestPreset.java:108)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:292)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:73)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:622)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
+	... 37 common frames omitted
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO com.github.mirospanacek.TestPreset - ********** end of test:invalidLogin ***********
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO com.github.mirospanacek.TestPreset - ************* Test: invalidLogin **************
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.94 (resolved driver for Chrome 138)
+2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver
+]]></system-out>
+    <system-err><![CDATA[čvc 13, 2025 9:30:14 ODP. org.openqa.selenium.concurrent.ExecutorServices shutdownGracefully
+WARNING: Failed to shutdown Driver Command Executor
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1749)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475)
+	at org.openqa.selenium.concurrent.ExecutorServices.shutdownGracefully(ExecutorServices.java:33)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.close(DriverCommandExecutor.java:221)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:169)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:435)
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:952)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:905)
+	at com.github.mirospanacek.TestPreset.teardown(TestPreset.java:108)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:292)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:73)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:622)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+]]></system-err>
+  </testcase>
+  <testcase name="invalidLogin[Customer{firstName=&apos;&apos;, lastName=&apos;&apos;, email=&apos;panacek.m@gmail.com&apos;, password=&apos;.lkj&apos;, socialTitle=null, birthdate=null}](2)" classname="com.github.mirospanacek.login.InvalidLoginTest" time="0.0">
+    <skipped message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. &#10;Host info: host: &apos;mp-Latitude-7430&apos;, ip: &apos;127.0.1.1&apos;"/>
+  </testcase>
+  <testcase name="setUp[public void com.github.mirospanacek.login.ValidLoginTest.positiveLogin(com.github.mirospanacek.data.customers.Customer)](1)" classname="com.github.mirospanacek.login.ValidLoginTest" time="1.101">
+    <failure message="unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=138.0.7204.92)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-63-generic&apos;, java.version: &apos;21.0.7&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ffa3818a61cae890ff8245e2e428cae6, get {url=http://localhost:8089}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39277/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ffa3818a61cae890ff8245e2e428cae6" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=138.0.7204.92)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-63-generic', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ffa3818a61cae890ff8245e2e428cae6, get {url=http://localhost:8089}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39277/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffa3818a61cae890ff8245e2e428cae6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.github.mirospanacek.TestPreset.setUp(TestPreset.java:89)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:353)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:308)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:292)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:73)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[2025-07-13 21:30:14 invalidLogin [TestNG-test-Regression Test-1] INFO com.github.mirospanacek.TestPreset - ********** end of test:invalidLogin ***********
+2025-07-13 21:30:15 positiveLogin [TestNG-test-Regression Test-2] INFO i.g.b.wdm.online.Downloader - Extracting driver from compressed file chromedriver-linux64.zip
+2025-07-13 21:30:15 positiveLogin [TestNG-test-Regression Test-2] INFO i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/mp/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver
+]]></system-out>
+    <system-err><![CDATA[čvc 13, 2025 9:30:15 ODP. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+čvc 13, 2025 9:30:15 ODP. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.92. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="getCustomers" classname="com.github.mirospanacek.login.ValidLoginTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUrl" classname="com.github.mirospanacek.login.ValidLoginTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="positiveLogin[Customer{firstName=&apos;Miroš&apos;, lastName=&apos;Panáček&apos;, email=&apos;panacek.m@gmail.com&apos;, password=&apos;Asdf456.lkj&apos;, socialTitle=null, birthdate=null}](1)" classname="com.github.mirospanacek.login.ValidLoginTest" time="0.0">
+    <skipped message="unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=138.0.7204.92)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-63-generic&apos;, java.version: &apos;21.0.7&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ffa3818a61cae890ff8245e2e428cae6, get {url=http://localhost:8089}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39277/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ffa3818a61cae890ff8245e2e428cae6"/>
+  </testcase>
+</testsuite>
