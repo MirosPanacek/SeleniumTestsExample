@@ -1,4 +1,0 @@
-2025-07-03 13:03:35  [TestNG-test-Regression Test-1] INFO  c.g.m.config.Configuration - jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48
-2025-07-03 13:03:35  [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - Actual test URL: http://192.168.173.102:8089
-2025-07-03 13:03:35 positiveLogin [TestNG-test-Regression Test-1] INFO  com.github.mirospanacek.TestPreset - ************* Test: positiveLogin **************
-2025-07-03 13:03:35 positiveLogin [TestNG-test-Regression Test-1] INFO  i.g.b.wdm.docker.DockerService - Starting Docker container selenoid/vnc:chrome_128.0

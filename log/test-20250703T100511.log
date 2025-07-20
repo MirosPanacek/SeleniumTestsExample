@@ -1,5 +1,0 @@
-2025-07-03 10:05:12  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: prestashop/prestashop:latest
-2025-07-03 10:05:12  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mysql:5.7
-2025-07-03 10:05:12  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mongo-express
-2025-07-03 10:05:12  [main] INFO  com.github.mirospanacek.TestPreset - Running docker containers: mongo:6
-2025-07-03 10:05:12  [main] INFO  com.github.mirospanacek.TestPreset - End of suite
