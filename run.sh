@@ -9,12 +9,12 @@ WAITED=0        # Initial time value
 while [ "$WAITED" -lt "$MAX_WAIT" ]; do
   HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:8089 -I)
 
-  if [ "$HTTP_CODE" -eq 200 ]; then
-    echo "✅ Server Is running (HTTP 200). Testy going to run..."
+  if [ "$HTTP_CODE" -eq 302 ]; then
+    echo "✅ Server Is running (HTTP 302). Testy going to run..."
 
     # Start tests
-   mvn clean test
-
+    mvn clean test
+    docker compose down
     exit 0
   else
     echo "⏳ Server does not run (HTTP $HTTP_CODE). Waiting for $WAITED sec..."

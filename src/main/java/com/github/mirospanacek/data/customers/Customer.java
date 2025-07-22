@@ -2,18 +2,22 @@ package com.github.mirospanacek.data.customers;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.github.mirospanacek.data.SocialTitle;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Customer {
+    /** cost factor for bcrypt */
+    private static final int STRENGTH = 10;
     private String  firstName = "";
     private String lastName = "";
     private String email = "";
     private String password = "";
     private SocialTitle socialTitle;
     private LocalDate birthdate;
+
 
     public Customer(){};
     public Customer(String email, String password, SocialTitle socialTitle, LocalDate birthdate) {
@@ -69,6 +73,13 @@ public class Customer {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String encoderPassword(String password) {
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(
+                BCryptPasswordEncoder.BCryptVersion.$2Y,
+                STRENGTH);
+        return encoder.encode(password);
     }
 
     @Override

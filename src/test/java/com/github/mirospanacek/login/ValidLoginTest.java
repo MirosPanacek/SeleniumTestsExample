@@ -7,11 +7,11 @@ import com.github.mirospanacek.pages.LoginPage;
 import com.github.mirospanacek.pages.MyAccountPage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.IOException;
+import java.sql.SQLException;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ValidLoginTest extends TestPreset {
@@ -19,6 +19,7 @@ public class ValidLoginTest extends TestPreset {
             LoggerFactory.getLogger(ValidLoginTest.class);
     private final static String CUSTOMERS = "./src/test/resources/users/customers.json";
     private final static String LOGI_PAGE_URL =  "http://localhost:8089/login?back=http%3A%2F%2Flocalhost%3A8089%2F";
+    private CustomersFactory customersFactory;
 
 
     @BeforeMethod
@@ -27,11 +28,18 @@ public class ValidLoginTest extends TestPreset {
         driver.get(url);
     }
 
-    @BeforeMethod
-    @DataProvider
-    public Customer[] getCustomers() throws IOException {
-        CustomersFactory customersFactory = new CustomersFactory(CUSTOMERS);
-        return customersFactory.getCustomers();
+    @BeforeClass
+    @DataProvider()
+    public Customer[] getCustomers() throws IOException, SQLException {
+        customersFactory = new CustomersFactory(CUSTOMERS);
+        Customer[] custom = customersFactory.getCustomers();
+        customersFactory.saveToDb();
+        return custom;
+    }
+
+    @AfterClass
+    public void cleanDb() throws SQLException {
+       customersFactory.removeAllFromDb();
     }
 
     @Test(dataProvider = "getCustomers")

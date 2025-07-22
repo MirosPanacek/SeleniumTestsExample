@@ -11,8 +11,7 @@ import java.util.Properties;
 public class Configuration {
     private static final Logger LOG =
             LoggerFactory.getLogger(Configuration.class);
-    private FileReader fileReader;
-    Properties properties;
+    private Properties properties;
     /**
      * Maven creates the file
      */
@@ -26,7 +25,6 @@ public class Configuration {
             throw new IOException("File app.properties not found on classpath (target/test-classes).");
         }
         properties.load(inputStream);
-
     }
 
     public String getUrl() {

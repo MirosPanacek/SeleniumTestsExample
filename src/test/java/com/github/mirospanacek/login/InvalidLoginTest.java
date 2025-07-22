@@ -7,11 +7,13 @@ import com.github.mirospanacek.pages.LoginPage;
 import com.github.mirospanacek.pages.MyAccountPage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -30,7 +32,7 @@ public class InvalidLoginTest extends TestPreset {
 
     @BeforeMethod
     @DataProvider
-    public Customer[] getCustomers() throws IOException {
+    public Customer[] getCustomers() throws IOException, SQLException {
         CustomersFactory customersFactory = new CustomersFactory(CUSTOMERS);
         return customersFactory.getCustomers();
     }
